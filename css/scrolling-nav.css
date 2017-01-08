@@ -1,0 +1,115 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+.navbar {
+    background-color: rgba(200, 200, 200, 0.1);
+    border: none;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    background-color: rgba(231, 231, 231, 0.5);
+    color: #111;
+}
+
+.navbar-default .navbar-brand {
+    color: #222;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: #333;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #222
+}
+
+.col-lg-12 {
+    color: #222;
+}
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+of those sections to manage the look and feel of the site. */
+
+.main-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background-color: #fff;
+    background: url('../img/tree.jpg');
+    background-repeat: no-repeat;
+    background-position: 75% center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.rsvp-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background-color: #eee;
+    background: url('../img/bench.jpg');
+    background-repeat: no-repeat;
+    background-position: 25% center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.registry-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background-color: #fff;
+    background: url('../img/bridge.jpg');
+    background-repeat: no-repeat;
+    background-position: 20% center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.photos-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background-color: #eee;
+    background: url('../img/ccc_front.jpg');
+    background-repeat: no-repeat;
+    background-position: 80% center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
