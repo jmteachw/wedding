@@ -8,6 +8,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: #ccc;
+    font-family: 'Poppins', sans-serif;
 }
 
 html {
@@ -29,40 +30,43 @@ html {
 }
 
 .navbar {
-    background-color: rgba(200, 200, 200, 0.1);
+    background-color: rgba(0, 0, 0, 0.4);
     border: none;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    background-color: rgba(231, 231, 231, 0.5);
-    color: #111;
+    background-color: rgba(100, 100, 100, 0.5);
+    color: #EEE;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #EEE;
 }
 
 .navbar-default .navbar-brand {
-    color: #222;
+    color: #CCC;
 }
 
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
-    color: #333;
+    color: #DDD;
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: #222
+    color: #CCC
 }
 
 .col-lg-12 {
-    color: #222;
+    color: #DDD;
+    padding: 10%;
 }
 
-/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
-The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
-of those sections to manage the look and feel of the site. */
+.legend {
+    color: #DDD;
+}
 
 .main-section {
     height: 100%;
     padding-top: 150px;
-    text-align: center;
-    background-color: #fff;
     background: url('../img/tree.jpg');
     background-repeat: no-repeat;
     background-position: 75% center;
@@ -74,9 +78,6 @@ of those sections to manage the look and feel of the site. */
 
 .rsvp-section {
     height: 100%;
-    padding-top: 150px;
-    text-align: center;
-    background-color: #eee;
     background: url('../img/bench.jpg');
     background-repeat: no-repeat;
     background-position: 25% center;
@@ -86,11 +87,15 @@ of those sections to manage the look and feel of the site. */
     -o-background-size: cover;
 }
 
+.rsvp-form {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 5%;
+}
+
 .registry-section {
     height: 100%;
     padding-top: 150px;
-    text-align: center;
-    background-color: #fff;
     background: url('../img/bridge.jpg');
     background-repeat: no-repeat;
     background-position: 20% center;
@@ -103,8 +108,6 @@ of those sections to manage the look and feel of the site. */
 .photos-section {
     height: 100%;
     padding-top: 150px;
-    text-align: center;
-    background-color: #eee;
     background: url('../img/ccc_front.jpg');
     background-repeat: no-repeat;
     background-position: 80% center;
@@ -112,4 +115,30 @@ of those sections to manage the look and feel of the site. */
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+.section-wrapper::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    border-radius: 10px;
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px);
+    height: 100%;
+    width: 100%;
+}
+
+.section-wrapper {
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 1%;
+    position: relative;
+}
+
+.section-text {
+    text-align: center;
+    position: relative;
 }
